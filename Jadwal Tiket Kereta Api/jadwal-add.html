@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jadwal.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/387774990c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="sidebar">
+        <div class="logo-details">
+          <img src="assets/kereta.png" alt="" width="50" />
+          <span class="logo_name">Jadwal Kereta Api</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="/123.html" class="active">
+              <i class="fa-solid fa-border-all"></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-solid fa-user-tie"></i>
+              <span class="links_name">Admin</span>
+            </a>
+          </li>
+          <li>
+            <a href="jadwal.html">
+              <i class="fa-solid fa-train"></i>
+              <span class="links_name">Jadwal Kereta Api</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Code Ticket/code_ticket.html">
+              <i class="fa-solid fa-ticket"></i>
+              <span class="links_name">Kode Tiket</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <section class="home-section">
+        <nav>
+          <div class="sidebar-button">
+            <i class="bx bx-menu sidebarBtn"></i>
+          </div>
+          <div class="profile-details">
+            <span class="admin_name">Admin</span>
+          </div>
+      </nav>
+
+      <div class="home-content">
+        <h3>Input Jadwal Kereta Api</h3>
+        <div class="form-jadwal">
+          <form action="">
+            <label for="kode_kereta">Kode Kereta</label>
+            <input
+              class="input"
+              type="text"
+              name="kode_kereta"
+              id="kode_kereta"
+              placeholder="Input Kode Kereta"
+            />
+            <label for="nama_kereta">Nama Kereta</label>
+            <input
+              class="input"
+              type="text"
+              name="nama_kereta"
+              id="nama_kereta"
+              placeholder="Input Nama Kereta"
+            />
+            <label for="stasiun_asal">Stasiun Asal</label>
+            <input
+              class="input"
+              type="text"
+              name="stasiun_asal"
+              id="stasiun_asal"
+              placeholder="Input Stasiun Asal"
+            />
+            <label for="stasiun_tujuan">Stasiun Tujuan</label>
+            <input
+              class="input"
+              type="text"
+              name="stasiun_tujuan"
+              id="stasiun_tujuan"
+              placeholder="Input Stasiun Tujuan"
+            />
+            <label for="waktu_berangkat">Waktu Keberangkatan</label>
+            <input
+              class="input"
+              type="text"
+              name="waktu_berangkat"
+              id="waktu_berangkat"
+              placeholder="Input Waktu Keberangkatan"
+            />
+            <label for="waktu_datang">Waktu Kedatangan</label>
+            <input
+              class="input"
+              type="text"
+              name="waktu_datang"
+              id="waktu_datang"
+              placeholder="Input Waktu Kedatangan"
+            />
+            <label for="kelas">Kelas</label>
+            <select class="input" name="kelas" id="kelas">
+              <option value="ekonomi">Ekonomi</option>
+              <option value="bisnis">Bisnis</option>
+              <option value="eksekutif">Eksekutif</option>
+            </select>
+            <label for="harga">Harga</label>
+            <input
+              class="input"
+              type="text"
+              name="harga"
+              id="harga"
+              placeholder="Input Harga"
+            />
+            <button type="submit" class="btn btn-simpan" name="simpan">
+              Simpan
+            </button>
+          </form>
+        </div>
+      </div>
+      </section>
+      <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+          sidebar.classList.toggle("active");
+          if (sidebar.classList.contains("active")) {
+            sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+          } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        };
+    </script>
+  </body>
+</html>
+

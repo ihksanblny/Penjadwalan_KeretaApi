@@ -4,126 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penjadwalan Kereta Api</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                        <a class="navbar-brand" href="#">
-                            <img src="assets/kereta.png" alt="logo" style="width: 100px; margin-top: -5px;">
-                        </a>
-                        <button type="button" class="navbar-toggle" data-toogle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="jadwal.html">Jadwal Kedatangan dan Keberangkatan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tiket.html">Cek Tiket</a>
-                        </li>
-                        <li class="nav-itme">
-                            <input type="search" name="search" id="search" placeholder="Search...">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <section class="page-section bgc-light">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Jadwal Kedatangan dan Keberangkatan</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>No</th>
-                                        <th>Nama Kereta</th>
-                                        <th>Asal</th>
-                                        <th>Tujuan</th>
-                                        <th>Jadwal Kedatangan</th>
-                                        <th>Jadwal Keberangkatan</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Argo Parahyangan</td>
-                                        <td>Gambir</td>
-                                        <td>Bandung</td>
-                                        <td>08.00</td>
-                                        <td>08.30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Argo Parahyangan</td>
-                                        <td>Gambir</td>
-                                        <td>Bandung</td>
-                                        <td>10.00</td>
-                                        <td>10.30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Argo Parahyangan</td>
-                                        <td>Gambir</td>
-                                        <td>Bandung</td>
-                                        <td>12.00</td>
-                                        <td>12.30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Argo Parahyangan</td>
-                                        <td>Gambir</td>
-                                        <td>Bandung</td>
-                                        <td>14.00</td>
-                                        <td>14.30</td>
-                                    </tr>
-                                    <tr>
+<body> 
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=""><img src="assets/kereta.png" alt="logo"></a></div>
+                <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Jadwal Kedatangan & Keberangkatan</a></li>
+                    <li><a href="">Code Ticket</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html" class="tbl-biru">Sign Up</a></li>
+                </ul>
             </div>
         </div>
-        </div>
-    </div>
+    </nav>
+    <div class="wrapper">
+        <!-- untuk home -->
+        <section id="home">
+            <img src="assets/kai.jpeg">
+            <div class="kolom">
+                <p class="deskripsi">Penjadwalan Kereta Api</p>
+                <h2>Seluruh Indonesia</h2>
+                <p>PT. IKA selalu memberikan yang terbaik</p>
+            </div>
         </section>
-        <div class="row">
-            <div class="col-md-4 remove-gutter">
-                <div class="block-interactive-banner style-light">
-                    <div class="__content overlay-container">
-                        <img src="assets/kai.jpeg" style="width: 30% 50px;" alt="KAI" class="img-responsive">
-                        <div class="overlay-hover">
-                            <div class="cell-vertical-wrapper">
-                                <!-- <div class="cell-top" style="text-align:center; width:100%; background-color: #0e5ca9;"><a href="http://penumpang.kai.id" style="width:100%;border:none;color:white;" target="_blank" class="btn-border  __view-more"></a></div> -->
-                            </div>
-                        </div>
-                        <div class="__block">
-                            <p class="__sub-title font-serif-italic"></p>
-                            <h4 class="__title">Jadwal</h4>
-                            <ul class="list-arrow list-primary">
-                                <li>Kedatangan</li>
-                                <li>Keberangkatan</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
+        <!-- untuk jadwal -->
+        <section id="jadwal">
+            <div class="kolom">
+                <p class="deskripsi">Jadwal Kedatangan & Keberangkatan</p>
+                <h2>PT.IKA</h2>
+                <p>Pastikan mengecek code booking tiket anda.</p>
             </div>
-        </div>
+            <img src="assets/train2.jpg"/>
+        </section>
     </div>
+    <footer>
+        <h4>&copy;PT. KERETA API INDONESIA</h4>
+    </footer>
 </body>
 </html>
