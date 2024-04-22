@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="code.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/387774990c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Code Ticket</title>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <img src="assets/kereta.png" alt="" width="50" />
+        <span class="logo_name">Jadwal Kereta Api</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/123.html" class="active">
+            <i class="fa-solid fa-border-all"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user-tie"></i>
+            <span class="links_name">Admin</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Jadwal Tiket Kereta Api/jadwal.html">
+            <i class="fa-solid fa-train"></i>
+            <span class="links_name">Jadwal Kereta Api</span>
+          </a>
+        </li>
+        <li>
+          <a href="code_ticket.html">
+            <i class="fa-solid fa-ticket"></i>
+            <span class="links_name">Kode Tiket</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            <h3>Jadwal Kereta Api</h3>
+            <button type="button" class="btn btn-tambah">
+                <a href="code_entri.html">Tambah Data</a>
+            </button>
+            <table class="table-data">
+                <thead>
+                    <tr>
+                        <th>Kode Tiket</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Y617L</td>
+                        <td>
+                            <button type="button" class="btn btn-edit">
+                                <a href="#">Edit</a>
+                            </button>
+                            <button type="button" class="btn btn-delete">
+                                <a href="#">Hapus</a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>QU190</td>
+                        <td>
+                            <button type="button" class="btn btn-edit">
+                                <a href="#">Edit</a>
+                            </button>
+                            <button type="button" class="btn btn-delete">
+                                <a href="#">Hapus</a>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        };
+    </script>
+</body>
+</html>
