@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="icon" href="/assets/image/train.png" /> -->
+    <link rel="stylesheet" href="jadwal.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/387774990c.js" crossorigin="anonymous"></script>
+    <title>Jadwal Kereta Api</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="/assets/image/train.png" alt="" width="30" />
+            <span class="logo_name">Jadwal Kereta Api</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/123.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="jadwal.html" class="active">
+                    <i class="fa-solid fa-train"></i>
+                    <span class="links_name">Jadwal Kereta Api</span>
+                </a>
+            </li>
+            <li>
+                <a href="/Code Ticket/code_ticket.html">
+                    <i class="fa-solid fa-ticket"></i>
+                    <span class="links_name">Kode Tiket</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="links_name">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class="bx bx-menu sidebarBtn"></i>
+            </div>
+            <div class="profile-details">
+                <span class="admin_name"></span>
+            </div>
+        </nav>
+        <div class="home-content">
+            <h3>Jadwal Kereta Api</h3>
+            <button type="button" class="btn btn-tambah">
+                <a href="jadwal-add.html">Tambah Data</a>
+            </button>
+            <table class="table-data">
+                <thead>
+                    <tr>
+                        <th>Kode Tiket</th>
+                        <th>Nama Kereta</th>
+                        <th>Stasiun Asal</th>
+                        <th>Stasiun Tujuan</th>
+                        <th>Waktu Keberangkatan</th>
+                        <th>Waktu Kedatangan</th>
+                        <th>Kelas</th>
+                        <th>Harga</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Y617L</td>
+                        <td>Gajayana</td>
+                        <td>Surabaya Gubeng</td>
+                        <td>Malang Kotabaru</td>
+                        <td>08:00</td>
+                        <td>10:30</td>
+                        <td>Bisnis</td>
+                        <td>Rp. 100.000</td>
+                        <td>
+                            <button type="button" class="btn btn-edit">
+                                <a href="#">Edit</a>
+                            </button>
+                            <button type="button" class="btn btn-delete">
+                                <a href="#">Hapus</a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>QU190</td>
+                        <td>Mutiara Selatan</td>
+                        <td>Jakarta Pasar Senen</td>
+                        <td>Surabaya Gubeng</td>
+                        <td>12:00</td>
+                        <td>19:00</td>
+                        <td>Ekonomi</td>
+                        <td>Rp. 200.000</td>
+                        <td>
+                            <button type="button" class="btn btn-edit">
+                                <a href="#">Edit</a>
+                            </button>
+                            <button type="button" class="btn btn-delete">
+                                <a href="#">Hapus</a>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        };
+    </script>
+</body>
+</html>
