@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3aa5e51db9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+         <a href="#" class="logo"><img src="assets/Kereta Api Indonesia (KAI) Logo.png" style="width: 100px;"></a>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Penjadwalan Kereta</a></li>
+         </ul>    
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Lihat Jadwal Kereta Disini<br>Cek<span> Kode Tiket Anda Disini</span></h2>
+                <p>Anda dapat melihat jadwal kereta dan kode tiket disini, dengan mudah dan cepat</p>
+                <a href="#">Lihat Selengkapnya</a>
+            </div>
+            <div class="imgBox">
+                <img src="assets/kereta1.png" class="Kereta" alt="Kereta">
+            </div>
+        </div>
+        <ul class="krt-pil">
+            <li><img src="assets/k1.png" onclick="imgSlider('assets/kereta1.png')"></li>
+            <li><img src="assets/k2.png" onclick="imgSlider('assets/kereta2.png')"></li>
+            <li><img src="assets/k3.png" onclick="imgSlider('assets/kereta3.png')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #111827;"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #111827;"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-x-twitter fa-xl" style="color: #111827;"></i></a></li>
+        </ul>
+
+        <!-- Tombol navigasi ke kiri -->
+        <div class="navigation">
+            <a href="#" onclick="prevImage()">
+                <i class="fas fa-arrow-left"></i> <!-- Menggunakan ikon panah kiri dari Font Awesome -->
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

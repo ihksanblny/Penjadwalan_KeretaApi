@@ -6,7 +6,7 @@
 
 .container{
     display: flex;
-    min-height: 100vh;
+    min-height: 1vh;
 }
 
 .sidebar{
@@ -255,6 +255,8 @@
     }
 }
 
+
+
 /* main content nav */
 .topbar{
     background-color: #111827;
@@ -319,6 +321,7 @@
     align-items: center; /* Mengatur posisi vertikal elemen menjadi sejajar dengan logo icons */
     justify-content: center;
 }
+
 
 
 
